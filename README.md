@@ -1,4 +1,4 @@
-# 项目 ChatAbstract-Frontend
+# ChatAbstract-Frontend
 
 该项目是一个使用 react 框架构建并打包的的网页应用。
 
