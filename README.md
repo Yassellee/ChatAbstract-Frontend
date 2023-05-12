@@ -1,30 +1,70 @@
-# ChatAbstract-Frontend
+# Getting Started with Create React App
 
-该项目是一个使用 react 框架构建并打包的的网页应用。
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 使用方法
+## Available Scripts
 
-要将整个项目部署到服务器上，并将 `index.html` 设置为网站的主页，请按照以下步骤操作：
+In the project directory, you can run:
 
-1. 将项目的所有文件（包括 `index.html`、CSS 文件、JavaScript 文件等）上传到服务器上的一个目录中。
+### `npm start`
 
-2. 确保您的服务器已经配置为托管静态网页，并且已经将该目录设置为网站的根目录。
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-3. 打开浏览器并输入服务器地址，即可访问您的网站。
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-   例如：`http://chatabstract.com`
+### `npm test`
 
-   浏览器会自动加载 `index.html` 并显示网站的主页。
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 要求
+### `npm run build`
 
-- 一个可用的服务器环境，支持静态网页的托管和访问。
-- 适当的网络连接以加载所需的资源。
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 其他说明
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- 如果您想自定义网页的样式或行为，您可以修改项目中的其他 HTML、CSS 和 JavaScript 文件。
-- 可以根据需要在服务器上创建其他文件和文件夹来扩展应用功能。
-- 请确保您的服务器设置正确，并且对外部访问开放。
-- 如果您遇到任何问题或疑问，请参阅服务器和托管服务提供商的文档，或者咨询相关的技术支持人员。
-- 请注意，本项目仅包含静态文件，并不涉及后端服务器或数据库的设置。
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
