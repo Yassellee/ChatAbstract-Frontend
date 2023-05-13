@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import axios from "axios"
 
 class Interaction extends React.Component {
     state = {
@@ -134,6 +135,20 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
         })
     }
     handleSubmitNote = () => {
+        axios.post("http://www.acanxie.com/api/testHttpRequest", {
+            start_index: this.ref1.current.selectionStart,
+            end_index: this.ref1.current.selectionEnd,
+            text: this.ref5.current.value,
+            comment: this.ref6.current.value
+        }, {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => {
+            console.log(res.data)
+        }).catch(err => {
+            console.log("ERROR", err)
+        })
         this.setState({
             note: [...this.state.note, { text: this.ref5.current.value, comment: this.ref6.current.value }],
             noteText: ""
