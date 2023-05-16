@@ -20,7 +20,9 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
             }
         ],
         selectedText: "",
-        noteText: ""
+        noteText: "",
+        start_index: 0,
+        end_index: 0
     }
 
     ref1 = React.createRef()
@@ -126,7 +128,9 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
         const end = this.ref1.current.selectionEnd;
         const value = this.ref1.current.value;
         this.setState({
-            text: value.slice(0, start) + value.slice(end)
+            text: value.slice(0, start) + value.slice(end),
+            start_index: start,
+            end_index: end
         })
     }
     handleAddNote = () => {
@@ -135,17 +139,13 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
         })
     }
     handleSubmitNote = () => {
-        axios.post("http://www.acanxie.com/api/testHttpRequest", {
-            start_index: this.ref1.current.selectionStart,
-            end_index: this.ref1.current.selectionEnd,
-            text: this.ref5.current.value,
-            comment: this.ref6.current.value
-        }, {
-            headers: {
-                "Content-Type": "application/json"
-            }
+        axios.post("http://101.5.8.62:80/chat/respond/json/", {
+            "text": this.state.selectedText,
+            "start_index": this.state.start_index,
+            "end_index": this.state.end_index,
+            "comment": this.state.noteText
         }).then(res => {
-            console.log(res.data)
+            window.alert(res.data.text)
         }).catch(err => {
             console.log("ERROR", err)
         })
