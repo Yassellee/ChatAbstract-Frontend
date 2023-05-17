@@ -139,13 +139,15 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
         })
     }
     handleSubmitNote = () => {
-        axios.post("http://101.5.8.62:80/chat/respond/json/", {
+        axios.post("http://183.172.142.213:80/chat/respond/json/", {
             "text": this.state.selectedText,
             "start_index": this.state.start_index,
             "end_index": this.state.end_index,
             "comment": this.state.noteText
         }).then(res => {
-            window.alert(res.data.text)
+            this.setState({
+                noteText: res.data
+            })
         }).catch(err => {
             console.log("ERROR", err)
         })
